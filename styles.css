@@ -183,6 +183,27 @@ body {
     align-items: center;
 }
 
+.profile-image {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 4px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.profile-image:hover {
+    transform: scale(1.05);
+}
+
+.profile-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
 .profile-placeholder {
     width: 300px;
     height: 300px;
@@ -269,9 +290,105 @@ body {
     font-weight: 500;
 }
 
+/* Education Section */
+.education {
+    padding: 100px 0;
+}
+
+.education-content {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.education-degree {
+    background: white;
+    padding: 3rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 3rem;
+    border-left: 4px solid #3498db;
+}
+
+.degree-info h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+}
+
+.degree-info h4 {
+    font-size: 1.2rem;
+    color: #3498db;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+.degree-date {
+    color: #666;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    font-weight: 500;
+}
+
+.degree-description {
+    color: #555;
+    line-height: 1.6;
+    font-size: 1rem;
+}
+
+.courses-section h3 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.courses-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+}
+
+.course-card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid #e0e0e0;
+}
+
+.course-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.course-icon {
+    font-size: 2rem;
+    color: #3498db;
+    margin-bottom: 1rem;
+}
+
+.course-card h4 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+    line-height: 1.3;
+}
+
+.course-card p {
+    color: #666;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
 /* Experience Section */
 .experience {
     padding: 100px 0;
+    background: #f8f9fa;
 }
 
 .timeline {
@@ -378,7 +495,6 @@ body {
 /* Research Section */
 .research {
     padding: 100px 0;
-    background: #f8f9fa;
 }
 
 .research-grid {
@@ -437,6 +553,7 @@ body {
 /* Awards Section */
 .awards {
     padding: 100px 0;
+    background: #f8f9fa;
 }
 
 .awards-grid {
@@ -490,7 +607,6 @@ body {
 /* Contact Section */
 .contact {
     padding: 100px 0;
-    background: #f8f9fa;
 }
 
 .contact-content {
@@ -645,6 +761,14 @@ body {
         grid-template-columns: 1fr 1fr;
     }
 
+    .education-degree {
+        padding: 2rem;
+    }
+
+    .courses-grid {
+        grid-template-columns: 1fr;
+    }
+
     .timeline::before {
         left: 20px;
     }
@@ -677,6 +801,11 @@ body {
     .section-title {
         font-size: 2rem;
     }
+
+    .profile-image {
+        width: 250px;
+        height: 250px;
+    }
 }
 
 @media (max-width: 480px) {
@@ -705,5 +834,18 @@ body {
     .btn {
         width: 100%;
         max-width: 200px;
+    }
+
+    .profile-image {
+        width: 200px;
+        height: 200px;
+    }
+
+    .education-degree {
+        padding: 1.5rem;
+    }
+
+    .degree-info h3 {
+        font-size: 1.3rem;
     }
 } 
