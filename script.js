@@ -209,6 +209,175 @@ document.querySelectorAll('.btn').forEach(button => {
     });
 });
 
+// Download Resume Function
+function downloadResume() {
+    // Create a new window with just the resume content
+    const resumeWindow = window.open('', '_blank');
+    const resumeContent = document.querySelector('.resume-container').outerHTML;
+    
+    resumeWindow.document.write(`
+        <!DOCTYPE html>
+        <html>
+        <head>
+            <title>Erum Hassan - Resume</title>
+            <style>
+                body { 
+                    font-family: 'Inter', sans-serif; 
+                    margin: 0; 
+                    padding: 20px; 
+                    background: white;
+                }
+                .resume-container {
+                    max-width: 900px;
+                    margin: 0 auto;
+                    background: white;
+                    border-radius: 12px;
+                    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+                    overflow: hidden;
+                }
+                .resume-header {
+                    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+                    color: white;
+                    padding: 3rem;
+                    text-align: center;
+                }
+                .resume-header h1 {
+                    font-size: 2.5rem;
+                    font-weight: 700;
+                    margin-bottom: 0.5rem;
+                }
+                .resume-title {
+                    font-size: 1.3rem;
+                    margin-bottom: 1.5rem;
+                    opacity: 0.9;
+                }
+                .resume-contact {
+                    display: flex;
+                    justify-content: center;
+                    gap: 2rem;
+                    flex-wrap: wrap;
+                }
+                .resume-contact span {
+                    display: flex;
+                    align-items: center;
+                    gap: 0.5rem;
+                    font-size: 1rem;
+                }
+                .resume-content {
+                    padding: 3rem;
+                }
+                .resume-section {
+                    margin-bottom: 2.5rem;
+                }
+                .resume-section-title {
+                    font-size: 1.5rem;
+                    font-weight: 600;
+                    color: #2c3e50;
+                    margin-bottom: 1.5rem;
+                    padding-bottom: 0.5rem;
+                    border-bottom: 2px solid #3498db;
+                }
+                .resume-item {
+                    margin-bottom: 2rem;
+                    padding-bottom: 1.5rem;
+                    border-bottom: 1px solid #e0e0e0;
+                }
+                .resume-item-header {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: flex-start;
+                    margin-bottom: 0.5rem;
+                    flex-wrap: wrap;
+                    gap: 1rem;
+                }
+                .resume-item h3 {
+                    font-size: 1.2rem;
+                    font-weight: 600;
+                    color: #2c3e50;
+                    margin: 0;
+                }
+                .resume-date {
+                    background: #3498db;
+                    color: white;
+                    padding: 0.3rem 0.8rem;
+                    border-radius: 15px;
+                    font-size: 0.9rem;
+                    font-weight: 500;
+                    white-space: nowrap;
+                }
+                .resume-item h4 {
+                    font-size: 1rem;
+                    color: #3498db;
+                    margin-bottom: 0.5rem;
+                    font-weight: 500;
+                }
+                .resume-gpa {
+                    color: #3498db;
+                    font-size: 1rem;
+                    font-weight: 600;
+                    margin-bottom: 1rem;
+                }
+                .resume-achievements ul, .resume-item ul {
+                    list-style: none;
+                    padding: 0;
+                }
+                .resume-achievements li, .resume-item li {
+                    color: #555;
+                    margin-bottom: 0.5rem;
+                    position: relative;
+                    padding-left: 1.2rem;
+                    line-height: 1.6;
+                }
+                .resume-achievements li::before, .resume-item li::before {
+                    content: '•';
+                    color: #3498db;
+                    font-weight: bold;
+                    position: absolute;
+                    left: 0;
+                }
+                .resume-skills {
+                    display: grid;
+                    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+                    gap: 1.5rem;
+                }
+                .resume-skills .skill-category {
+                    background: #f8f9fa;
+                    padding: 1.5rem;
+                    border-radius: 8px;
+                    border-left: 4px solid #3498db;
+                }
+                .resume-skills .skill-category h4 {
+                    font-size: 1rem;
+                    font-weight: 600;
+                    color: #2c3e50;
+                    margin-bottom: 0.5rem;
+                }
+                .resume-skills .skill-category p {
+                    color: #666;
+                    font-size: 0.9rem;
+                    line-height: 1.5;
+                    margin: 0;
+                }
+                @media print {
+                    body { margin: 0; padding: 0; }
+                    .resume-container { box-shadow: none; border-radius: 0; }
+                }
+            </style>
+        </head>
+        <body>
+            ${resumeContent}
+        </body>
+        </html>
+    `);
+    
+    resumeWindow.document.close();
+    
+    // Wait for content to load, then trigger print
+    setTimeout(() => {
+        resumeWindow.print();
+    }, 500);
+}
+
 // Add CSS for ripple effect
 const style = document.createElement('style');
 style.textContent = `
