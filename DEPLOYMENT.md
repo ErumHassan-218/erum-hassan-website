@@ -45,7 +45,7 @@ Your website will be available at: `https://YOUR_USERNAME.github.io/REPO_NAME`
 
 ### Method A: Drag & Drop (Easiest)
 1. Go to [Netlify.com](https://netlify.com) and sign up
-2. Drag your entire `ErumCV` folder to the Netlify dashboard
+2. Drag your entire `erum-hassan-website` folder to the Netlify dashboard
 3. Wait for deployment (usually 30 seconds)
 4. Your site is live! Netlify gives you a random URL like `https://amazing-site-123.netlify.app`
 
