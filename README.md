@@ -29,11 +29,14 @@ A modern, responsive personal website for Erum Hassan, showcasing her impressive
 ## 📁 File Structure
 
 ```
-ErumCV/
-├── index.html          # Main HTML file
-├── styles.css          # CSS styles and responsive design
-├── script.js           # JavaScript functionality
-└── README.md           # Project documentation
+erum-hassan-website/
+├── index.html               # Main HTML file
+├── styles.css               # CSS styles and responsive design
+├── script.js                # JavaScript functionality
+├── Erum_Hassan_Resume.pdf   # Downloadable resume
+├── 1695582544862.jpeg       # Profile photo
+├── DEPLOYMENT.md            # How to publish the site
+└── README.md                # Project documentation
 ```
 
 ## 🚀 Getting Started
