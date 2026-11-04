@@ -183,7 +183,7 @@ To use a custom domain:
 
 For questions or customization requests:
 - **Email**: erumhassan@ou.edu
-- **LinkedIn**: [www.linkedin.com/in/erumhassan]
+- **LinkedIn**: [linkedin.com/in/erumhassan](https://www.linkedin.com/in/erumhassan/)
 
 ## 📄 License
 
