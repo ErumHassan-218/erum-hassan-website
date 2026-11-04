@@ -2,6 +2,8 @@
 
 A modern, responsive personal website for Erum Hassan, showcasing her impressive background in Chemical Engineering, research experience, and professional achievements.
 
+**Live site:** https://erumhassan-218.github.io/erum-hassan-website/
+
 ## 🌟 Features
 
 ### Design & User Experience
