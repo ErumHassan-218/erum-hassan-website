@@ -2,6 +2,8 @@
 
 A modern, responsive personal website for Erum Hassan, showcasing her impressive background in Chemical Engineering, research experience, and professional achievements.
 
+**Live site:** https://erumhassan-218.github.io/erum-hassan-website/
+
 ## 🌟 Features
 
 ### Design & User Experience
@@ -181,7 +183,7 @@ To use a custom domain:
 
 For questions or customization requests:
 - **Email**: erumhassan@ou.edu
-- **LinkedIn**: [Erum Hassan's Profile]
+- **LinkedIn**: [linkedin.com/in/erumhassan](https://www.linkedin.com/in/erumhassan/)
 
 ## 📄 License
 
